@@ -17,7 +17,7 @@
 }
 
 @utility glass-block {
-  @apply bg-base/20 rounded-2xl shadow-xl backdrop-blur-2xl border border-solid border-base/30;
+  @apply bg-base/20 backdrop-blur-2xl rounded-2xl shadow-xl border border-solid border-base/30;
 }
 
 @layer base {

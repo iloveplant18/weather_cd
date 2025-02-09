@@ -44,7 +44,7 @@ function CurrentGeolocationWeather() {
   }
 
   return (
-    <div className="relative glass-block mt-5 overflow-hidden pb-4">
+    <div className="relative glass-block overflow-hidden pb-4 mt-auto px-2">
       {!currentWeather && !currentWeatherError && <Loading />}
       <h2 className="text-2xl text-center py-3">
         {currentWeatherError === "no browser support"

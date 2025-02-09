@@ -31,7 +31,7 @@ const links: LinkType[] = [
 function BottomNavigation() {
   return (
     <nav className="pb-2 container">
-      <ul className="flex glass-block">
+      <ul className="flex glass-block backdrop-blur-2xl">
         {links.map((link) => (
           <li
             className="flex-1 pb-3 pt-5 has-[.active]:bg-base-200 transition-all"
@@ -40,7 +40,7 @@ function BottomNavigation() {
             <NavLink
               className={({ isActive }) =>
                 `flex flex-col font-bold focus:outline-0 focus-visible:scale-120 items-center transition-all ${
-                  isActive ? " text-base" : "text-base/60"
+                  isActive ? " text-base scale-120" : "text-base/80"
                 }`}
               to={link.to}
             >
