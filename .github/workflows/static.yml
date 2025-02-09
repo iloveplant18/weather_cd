@@ -38,6 +38,8 @@ jobs:
         run: deno install
       - name: Build
         run: deno task build
+        env:
+          VITE_WEATHER_API_KEY: ${{ secrets.VITE_WEATHER_API_KEY }}
       - name: Setup Pages
         uses: actions/configure-pages@v4
       - name: Upload artifact
