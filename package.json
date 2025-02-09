@@ -1,4 +1,5 @@
 {
+  "homepage": "https://iloveplant18.github.io/weather_cd/",
   "dependencies": {
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
