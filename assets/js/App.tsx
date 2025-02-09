@@ -1,4 +1,4 @@
-import { BrowserRouter, Route, Routes } from "react-router";
+import { HashRouter, Route, Routes } from "react-router";
 import DefaultLayout from "./Layouts/DefaultLayout/DefaultLayout.tsx";
 import Home from "./Pages/Home/Home.tsx";
 import Favorites from "./Pages/Favorites/Favorites.tsx";
@@ -8,7 +8,7 @@ import HoursForecast from "./Pages/HoursForecast/HoursForecast.tsx";
 
 function App() {
   return (
-    <BrowserRouter>
+    <HashRouter>
       <Routes>
         <Route path="" element={<DefaultLayout />}>
           <Route index element={<Home />} />
@@ -18,7 +18,7 @@ function App() {
           <Route path="location/:locationId/:date" element={<HoursForecast />} />
         </Route>
       </Routes>
-    </BrowserRouter>
+    </HashRouter>
   );
 }
 
